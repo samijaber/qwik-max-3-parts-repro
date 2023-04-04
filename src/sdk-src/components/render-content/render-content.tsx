@@ -21,6 +21,7 @@ export const RenderContent = component$((props: RenderContentProps) => {
   const state = useStore<any>(
     {
       allRegisteredComponents: [
+        // CHECK: removing this fixes it
         ...getDefaultRegisteredComponents(),
         ...(props.customComponents || []),
       ].reduce(
@@ -43,10 +44,12 @@ export const RenderContent = component$((props: RenderContentProps) => {
     context: {},
     apiKey: "a",
     apiVersion: undefined,
+    // CHECK: replacing this with [] fixes it
     registeredComponents: state.allRegisteredComponents,
     inheritedStyles: {},
   });
   useContextProvider(builderContext, bdctx);
+  // CHECK: removing this fixes it
   useVisibleTask$(() => {});
 
   return (
