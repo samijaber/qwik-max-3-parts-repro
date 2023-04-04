@@ -1,7 +1,5 @@
 import {
-  Fragment,
   component$,
-  h,
   useSignal,
   useStore,
   useVisibleTask$,

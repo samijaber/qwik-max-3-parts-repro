@@ -1,4 +1,4 @@
-import { Fragment, Slot, component$, h } from "@builder.io/qwik";
+import { Slot, component$ } from "@builder.io/qwik";
 
 export interface FragmentProps {
   maxWidth?: number;

@@ -1,5 +1,5 @@
-import { BuilderContextInterface } from '../../context/types.js';
-import { BuilderBlock } from '../../types/builder-block.js';
+import type { BuilderContextInterface } from '../../context/types.js';
+import type { BuilderBlock } from '../../types/builder-block.js';
 import {
   getComponent,
 } from './render-block.helpers.js';

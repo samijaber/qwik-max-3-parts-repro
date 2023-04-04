@@ -1,6 +1,6 @@
 import { TARGET } from "../constants/target.js";
 
-import { Fragment, component$, h, useComputed$ } from "@builder.io/qwik";
+import { component$, useComputed$ } from "@builder.io/qwik";
 
 interface Props {
   styles: string;

@@ -5,9 +5,7 @@ import BuilderBlocks from "../../components/render-blocks";
 import { isEditing } from "../../functions/is-editing.js";
 
 import {
-  Fragment,
   component$,
-  h,
   useComputed$,
   useContext,
   useSignal,

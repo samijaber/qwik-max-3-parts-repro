@@ -1,6 +1,6 @@
 import { isEditing } from "../../functions/is-editing.js";
 
-import { Fragment, component$, h } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 
 export interface ImgProps {
   attributes?: any;

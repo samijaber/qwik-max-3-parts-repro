@@ -1,4 +1,4 @@
-import { Fragment, component$, h, useStylesScoped$ } from "@builder.io/qwik";
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
 
 export interface ButtonProps {
   attributes?: any;

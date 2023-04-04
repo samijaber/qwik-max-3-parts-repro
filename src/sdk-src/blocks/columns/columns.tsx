@@ -2,20 +2,19 @@ import RenderBlocks from "../../components/render-blocks";
 
 import RenderInlinedStyles from "../../components/render-inlined-styles";
 
-import { SizeName, getSizesForBreakpoints } from "../../constants/device-sizes";
+import type { SizeName} from "../../constants/device-sizes";
+import { getSizesForBreakpoints } from "../../constants/device-sizes";
 
 import { TARGET } from "../../constants/target.js";
 
 import BuilderContext from "../../context/builder.context";
 
-import { BuilderBlock } from "../../types/builder-block";
+import type { BuilderBlock } from "../../types/builder-block";
 
-import { Dictionary } from "../../types/typescript";
+import type { Dictionary } from "../../types/typescript";
 
 import {
-  Fragment,
   component$,
-  h,
   useComputed$,
   useContext,
   useStore,

@@ -9,6 +9,7 @@ specifiers:
   '@typescript-eslint/parser': 5.56.0
   eslint: 8.36.0
   eslint-plugin-qwik: 0.100.0
+  eslint-plugin-unused-imports: ^2.0.0
   prettier: 2.8.7
   typescript: 5.0.2
   undici: 5.21.0
@@ -24,6 +25,7 @@ devDependencies:
   '@typescript-eslint/parser': 5.56.0_j4766f7ecgqbon3u7zlxn5zszu
   eslint: 8.36.0
   eslint-plugin-qwik: 0.100.0_eslint@8.36.0
+  eslint-plugin-unused-imports: 2.0.0_pjgbsoxltfjhart6hcjsvw66hu
   prettier: 2.8.7
   typescript: 5.0.2
   undici: 5.21.0
@@ -890,6 +892,26 @@ packages:
     dependencies:
       eslint: 8.36.0
       jsx-ast-utils: 3.3.3
+    dev: true
+
+  /eslint-plugin-unused-imports/2.0.0_pjgbsoxltfjhart6hcjsvw66hu:
+    resolution: {integrity: sha512-3APeS/tQlTrFa167ThtP0Zm0vctjr4M44HMpeg1P4bK6wItarumq0Ma82xorMKdFsWpphQBlRPzw/pxiVELX1A==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      '@typescript-eslint/eslint-plugin': ^5.0.0
+      eslint: ^8.0.0
+    peerDependenciesMeta:
+      '@typescript-eslint/eslint-plugin':
+        optional: true
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 5.56.0_2hcjazgfnbtq42tcc73br2vup4
+      eslint: 8.36.0
+      eslint-rule-composer: 0.3.0
+    dev: true
+
+  /eslint-rule-composer/0.3.0:
+    resolution: {integrity: sha512-bt+Sh8CtDmn2OajxvNO+BX7Wn4CIWMpTRm3MaiKPCQcnnlm0CS2mhui6QaoeQugs+3Kj2ESKEEGJUdVafwhiCg==}
+    engines: {node: '>=4.0.0'}
     dev: true
 
   /eslint-scope/5.1.1:

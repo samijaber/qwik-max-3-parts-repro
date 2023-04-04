@@ -1,15 +1,13 @@
 import BuilderContext from "../../context/builder.context";
 
-import { BuilderContextInterface } from "../../context/types.js";
+import type { BuilderContextInterface } from "../../context/types.js";
 
-import { BuilderBlock } from "../../types/builder-block";
+import type { BuilderBlock } from "../../types/builder-block";
 
 import RenderBlock from "./render-block";
 
 import {
-  Fragment,
   component$,
-  h,
   useContextProvider,
   useStore,
 } from "@builder.io/qwik";

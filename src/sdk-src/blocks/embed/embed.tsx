@@ -1,9 +1,7 @@
 import { isJsScript } from "./helpers.js";
 
 import {
-  Fragment,
   component$,
-  h,
   useSignal,
   useStore,
   useTask$,

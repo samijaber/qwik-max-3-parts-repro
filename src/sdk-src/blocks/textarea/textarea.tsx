@@ -1,4 +1,4 @@
-import { Fragment, component$, h } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 
 export interface TextareaProps {
   attributes?: any;

@@ -1,20 +1,14 @@
 import BuilderContext from "../context/builder.context";
 
-import { isEditing } from "../functions/is-editing.js";
 
-import { BuilderBlock } from "../types/builder-block.js";
+import type { BuilderBlock } from "../types/builder-block.js";
 
-import BlockStyles from "./render-block/block-styles";
 
 import RenderBlock from "./render-block/render-block";
 
 import {
-  Fragment,
   component$,
-  h,
-  useComputed$,
   useContext,
-  useStylesScoped$,
 } from "@builder.io/qwik";
 
 export type RenderBlockProps = {

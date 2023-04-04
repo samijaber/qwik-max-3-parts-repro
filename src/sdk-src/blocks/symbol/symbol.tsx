@@ -6,19 +6,14 @@ import BuilderContext from "../../context/builder.context";
 
 import { getContent } from "../../functions/get-content/index.js";
 
-import { BuilderBlock } from "../../types/builder-block.js";
+import type { BuilderBlock } from "../../types/builder-block.js";
 
-import { BuilderContent } from "../../types/builder-content.js";
+import type { BuilderContent } from "../../types/builder-content.js";
 
 import {
-  $,
-  Fragment,
   component$,
-  h,
   useContext,
   useStore,
-  useTask$,
-  useVisibleTask$,
 } from "@builder.io/qwik";
 
 export interface SymbolInfo {

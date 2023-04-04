@@ -1,6 +1,6 @@
 import BuilderContext from "../context/builder.context";
 
-import { Fragment, component$, h, useContext } from "@builder.io/qwik";
+import { component$, useContext } from "@builder.io/qwik";
 
 export interface BaseTextProps {
   text: string;

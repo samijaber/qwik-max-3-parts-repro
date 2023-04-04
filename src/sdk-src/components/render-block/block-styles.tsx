@@ -5,7 +5,7 @@ import {
 
 import { TARGET } from "../../constants/target.js";
 
-import { BuilderContextInterface } from "../../context/types.js";
+import type { BuilderContextInterface } from "../../context/types.js";
 
 import { getProcessedBlock } from "../../functions/get-processed-block.js";
 
@@ -13,11 +13,11 @@ import { createCssClass } from "../../helpers/css.js";
 
 import { checkIsDefined } from "../../helpers/nullable.js";
 
-import { BuilderBlock } from "../../types/builder-block.js";
+import type { BuilderBlock } from "../../types/builder-block.js";
 
 import RenderInlinedStyles from "../render-inlined-styles";
 
-import { Fragment, component$, h, useComputed$ } from "@builder.io/qwik";
+import { component$, useComputed$ } from "@builder.io/qwik";
 
 export type BlockStylesProps = {
   block: BuilderBlock;
