@@ -10,6 +10,10 @@ import { componentInfo as customCodeInfo } from "../blocks/custom-code/component
  */
 export const getDefaultRegisteredComponents: () => RegisteredComponent[] =
   () => [
-    { component: customCode, ...customCodeInfo },
+    {
+      component: customCode,
+      // CHECK: removing this fixes it
+      ...customCodeInfo,
+    },
     { component: Symbol, ...symbolComponentInfo },
   ];
